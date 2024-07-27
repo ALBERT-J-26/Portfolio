@@ -177,7 +177,7 @@ margin: 50px;
 
 }
 
-@media(max-width: 800px){
+@media(max-width: 600px){
     .profile{
         background-color: rgb(255, 255, 255);
     }
@@ -185,10 +185,11 @@ margin: 50px;
         width: fit-content;
     }
     .list{
+        width: fit-content;
         margin: 50px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        margin: 30px 100px 30px 100px;
+        
     }
     .list p{
         font-size: 15px;
