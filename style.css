@@ -205,3 +205,124 @@ margin: 50px;
         font-size: 40px;
         color: rgb(63, 63, 63);
     }
+
+    .projects{
+        text-align: center;
+        }
+
+    .project-list{
+        display: flex;
+        }
+
+    .projects h1{
+        font-size: 40px;
+        color: rgb(63, 63, 63);
+    }
+
+    .wrapper{
+        width: 100%;
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image{
+        width: 500px;
+        position: relative;
+    }
+
+    img{
+        width: 350px;
+        height: 300px;
+        display: block;
+        margin: auto;
+    }
+
+    .content{
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.6);
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        opacity: 0;
+        transition: 0.6s;
+    }
+
+    .content:hover{
+        opacity: 1;
+    }
+
+    .content h1{
+        font-size: 55px;
+        color: #ffe100;
+        margin-top: 10px;
+    }
+
+    .content p{
+        font-size: 19px;
+        color: #fff;
+    }
+
+    .content > *{
+        transform: translateY(25px);
+        transition: transform 0.6s;
+    }
+
+    .content:hover > *{
+        transform: translateY(0px);
+    } 
+
+    @media(max-width: 600px){
+        .project-list{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            }
+    }
+
+    .course{
+        text-align: center;
+        margin: 50px;
+    }
+
+    .course h1{
+        font-size: 40px;
+        color: rgb(63, 63, 63);
+    }
+
+    .course-list{
+        justify-content: center;
+        display: flex;
+        margin: 50px;
+    }
+
+    .course-pic{
+        margin: 30px;
+    }
+
+    #courses{
+        width: 400px;
+        transition: 0.2s;
+        box-shadow: 5px 5px 10px 0px gray;
+
+    }
+
+    #courses:hover{
+        transform: scale(1.05);
+    }
+
+    .course-pic h2{
+        color: rgb(63, 63, 63);
+        margin-top: 50px;
+    }
+
+    @media(max-width: 600px){
+        .course-list{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            }
+    }
