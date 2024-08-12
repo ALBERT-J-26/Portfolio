@@ -2,7 +2,6 @@ html {
     scroll-behavior: smooth;
   }
   
-
 *{
     margin: 0;
     padding: 0;
@@ -10,21 +9,22 @@ html {
     font-family: 'Montserrat', sans-serif;
 }
 
-html,body{
-    height: 100%;
-    width: 100%;
-    background: #f8f8f8;
-}
+
 
 nav{
-    padding: 10px 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #EF233C;
-    position: relative;
-    height: 70px;
-}
+   
+      padding: 10px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #EF233C;
+      height: 70px;
+      position: sticky;
+      top: 0px;
+      z-index: 1;
+      box-shadow: 1px 1px 5px 1px rgb(208, 208, 208);
+  }
+  
 
 .portfolio-logo{
     color: #fff;
@@ -74,18 +74,22 @@ nav ul li a{
     margin-top: 50px;
     margin-left: 100px;
     animation: fade-up 0.5s;
+    
 }
 
 .profile h1{
     font-size: 40px;
     color: rgb(63, 63, 63);
+    
 }
 
 .profile p{
     width: 500px;
     color: gray;
     margin-top: 30px;
-    word-spacing: 10px;
+    word-spacing: 5px;
+    text-align: justify;
+    text-justify: inter-word;
 
 }
 .skills{
@@ -127,7 +131,7 @@ nav ul li a{
     }
 
     .details{
-        margin-left: 200px;
+        margin-left: 300px;
         margin-top: 50px;
         width: 500px;
         height: 150px;
@@ -158,6 +162,10 @@ nav ul li a{
         animation: appear 5s linear;
         animation-timeline: view();
         animation-range: entry 0% cover 40%;
+    }
+
+    #per{
+        color: #EF233C;
     }
     @keyframes appear{
         from{
@@ -285,7 +293,7 @@ nav ul li a{
         font-weight: bold;
     }
     .education{
-        margin-bottom: 50px;
+        margin-bottom: 80px;
     }
     .education h1{
         text-align: center;
@@ -296,44 +304,26 @@ nav ul li a{
         display: flex;
     }
 
-    .pg{
+    .qual{
         margin-top: 50px;
+        margin-left: 100px;
+        box-shadow: 5px 5px 10px 0px gray;
+        width: 500px;
+        padding: 20px;
+        animation: appear 5s linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+    }
+    .timeline{
+        margin-top: 90px;
         margin-left: 300px;
-        box-shadow: 5px 5px 10px 0px gray;
-        width: 500px;
-        padding: 20px;
-        animation: appear 5s linear;
-        animation-timeline: view();
-        animation-range: entry 0% cover 40%;
-    }
-    .ug{
-        margin-top: 50px;
-        margin-left: 100px;
-        box-shadow: 5px 5px 10px 0px gray;
-        width: 500px;
-        padding: 20px;
-        animation: appear 5s linear;
-        animation-timeline: view();
-        animation-range: entry 0% cover 40%;
-    }
-    .timeline1{
-        margin-top: 90px;
-        margin-left: 100px;
         color: #EF233C;
         font-weight: 700;
         animation: appear 5s linear;
         animation-timeline: view();
         animation-range: entry 0% cover 40%;
     }
-    .timeline2{
-        margin-top: 90px;
-        margin-left: 600px;
-        color: #EF233C;
-        font-weight: 700;
-        animation: appear 5s linear;
-        animation-timeline: view();
-        animation-range: entry 0% cover 40%;
-    }
+
 
     .footer {
         background: #EF233C;
@@ -467,6 +457,10 @@ nav ul li a{
         
         }
 
+        .box{
+            margin-top: 30px;
+        }
+
         .details{
             margin-left: 0px;
             margin-top: 0px;
@@ -585,7 +579,6 @@ nav ul li a{
             color: rgb(100, 100, 100);
             margin-top: 30px;
             letter-spacing: 2px;
-            text-decoration: underline;
         }
 
         .course-pic p{
@@ -602,19 +595,9 @@ nav ul li a{
         }
         
     
-        .pg{
+        .qual{
             margin-top: 50px;
-            margin-left: 20px;
-            box-shadow: 5px 5px 10px 0px gray;
-            width: 400px;
-            padding: 20px;
-            animation: appear 5s linear;
-            animation-timeline: view();
-            animation-range: entry 0% cover 40%;
-        }
-        .ug{
-            margin-top: 50px;
-            margin-left: 20px;
+            margin-left: 0px;
             margin-right: 20px;
             box-shadow: 5px 5px 10px 0px gray;
             width: 400px;
@@ -623,16 +606,7 @@ nav ul li a{
             animation-timeline: view();
             animation-range: entry 0% cover 40%;
         }
-        .timeline1{
-            margin-top: 90px;
-            margin-left: 20px;
-            color: #EF233C;
-            font-weight: 700;
-            animation: appear 5s linear;
-            animation-timeline: view();
-            animation-range: entry 0% cover 40%;
-        }
-        .timeline2{
+        .timeline{
             margin-top: 90px;
             margin-left: 20px;
             color: #EF233C;
