@@ -1,0 +1,644 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+nav{
+   
+      padding: 10px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #EF233C;
+      height: 70px;
+      position: sticky;
+      top: 0px;
+      z-index: 1;
+      box-shadow: 1px 1px 5px 1px rgb(208, 208, 208);
+  }
+  
+
+.portfolio-logo{
+    color: #fff;
+}
+
+nav ul{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+nav ul li{
+    list-style-type: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu-icon{
+    display: none;
+}
+
+.menu-icon i{
+    color: #fff;
+    font-size: 30px;
+}
+
+.name{
+    background: #EF233C;
+    padding: 20px 0px 80px 150px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+.name  h1 {
+    margin: 20px 0px;
+}
+
+.name a{
+    text-decoration: none;
+    color: white;
+}
+.profile{
+    margin-top: 50px;
+    margin-left: 100px;
+    animation: fade-up 0.5s;
+    
+}
+
+.profile h1{
+    font-size: 40px;
+    color: rgb(63, 63, 63);
+    
+}
+
+.profile p{
+    width: 500px;
+    color: gray;
+    margin-top: 30px;
+    word-spacing: 5px;
+    text-align: justify;
+    text-justify: inter-word;
+
+}
+.skills{
+    text-align: center;
+    margin: 50px;
+    }
+    
+    .skills h1{
+        font-size: 40px;
+        color: rgb(63, 63, 63);
+    }
+    
+    .list{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin: 30px 100px 30px 100px;
+    }
+    
+    .list p{
+        padding: 20px;
+        color: gray;
+    }
+    
+    .logo{
+        margin: 10px;
+        cursor: pointer;
+        animation: appear 5s linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+    }
+    .internship{
+        margin: 50px;
+    }
+
+    .internship h1{
+        text-align: center;
+        font-size: 40px;
+        color: rgb(63, 63, 63);
+    }
+
+    .details{
+        margin-left: 300px;
+        margin-top: 50px;
+        width: 500px;
+        height: 150px;
+        color: gray;
+        animation: appear 5s linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+        box-shadow: 2px 2px 5px 0px gray, -2px -2px 5px 0px gray;
+    }
+    .details h2{
+        color: rgb(63, 63, 63);
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    .details p, h4{
+        margin-left: 20px;
+        margin-top:8px;
+        color: gray;
+    }
+    .box{
+        display: flex;
+    }
+    .duration{
+        margin-top: 110px;
+        margin-left: 30px;
+        color: #EF233C;
+        font-weight: 700;
+        animation: appear 5s linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+    }
+
+    #per{
+        color: #EF233C;
+    }
+    @keyframes appear{
+        from{
+            opacity: 0;
+            scale: 0.5;
+        }
+        to{
+            opacity: 1;
+            scale: 1;
+        }
+    }
+
+    .projects{
+        text-align: center;
+        }
+
+    .project-list{
+        display: flex;
+        animation: appear 5s linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+        }
+
+    .projects h1{
+        font-size: 40px;
+        color: rgb(63, 63, 63);
+    }
+
+    .wrapper{
+        width: 100%;
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image{
+        width: 500px;
+        position: relative;
+    }
+
+    img{
+        width: 400px;
+        height: 300px;
+        display: block;
+        margin: auto;
+    }
+    .content{
+        width: 80%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.6);
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        opacity: 0;
+        transition: 0.6s;
+        margin-left: 50px;
+    }
+
+    .content:hover{
+        opacity: 1;
+    }
+
+    .content h1{
+        font-size: 20px;
+        color: #ffe100;
+        margin-top: 10px;
+    }
+
+    .content p{
+        font-size: 19px;
+        color: #fff;
+    }
+
+    .content > *{
+        transform: translateY(25px);
+        transition: transform 0.6s;
+    }
+
+    .content:hover > *{
+        transform: translateY(0px);
+    } 
+    .course{
+        text-align: center;
+        margin: 50px;
+    }
+
+    .course h1{
+        font-size: 40px;
+        color: rgb(63, 63, 63);
+    }
+
+    .course-list{
+        justify-content: center;
+        display: flex;
+        margin: 50px;
+        animation: appear 5s linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+    }
+
+    .course-pic{
+        margin: 30px;
+    }
+
+    #courses{
+        width: 400px;
+        transition: 0.2s;
+        box-shadow: 5px 5px 10px 0px gray;
+
+    }
+
+    #courses:hover{
+        transform: scale(1.05);
+    }
+
+    .course-pic h2{
+        color: rgb(63, 63, 63);
+        margin-top: 50px;
+    }
+    #ins{
+        font-weight: bold;
+    }
+    .education{
+        margin-bottom: 80px;
+    }
+    .education h1{
+        text-align: center;
+        font-size: 40px;
+        color: rgb(63, 63, 63);
+    }
+    .edudet{
+        display: flex;
+    }
+
+    .qual{
+        margin-top: 50px;
+        margin-left: 100px;
+        box-shadow: 5px 5px 10px 0px gray;
+        width: 500px;
+        padding: 20px;
+        animation: appear 5s linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+    }
+    .timeline{
+        margin-top: 90px;
+        margin-left: 300px;
+        color: #EF233C;
+        font-weight: 700;
+        animation: appear 5s linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+    }
+
+
+    .footer {
+        background: #EF233C;
+        text-align: center;
+        padding: 50px;
+        color: white;
+        font-size: 20px;
+    }
+
+    .footer p{
+        padding: 8px;
+    }
+    .footer a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .footer #linkedin, #git{
+        display: inline;
+        margin: 0px;
+        cursor: pointer;
+    }
+
+    #owner, #mail, #phone{
+        margin-right: 10px;
+        padding-top: 0px;
+    }
+
+    .resume{
+        text-align: center;
+        margin: 30px;
+        color: rgb(63, 63, 63);
+    }
+    .resume a{
+        text-decoration: none;
+        background-color: #EF233C;
+        color: rgb(254, 254, 254);
+        font-weight: 600;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+
+@media (max-width:600px) {
+    nav{
+        background-color: #ca4655;
+    }
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background: #ffffff;
+        gap: 0;
+        overflow: hidden;
+    }
+    nav ul li{
+        padding: 20px;
+        padding-top: 0;
+    }
+    nav ul li a {
+        color: black;
+    }
+    .menu-icon{
+        display: block;
+    }
+    #menuList{
+        transition: all 0.5s;
+        
+    }
+    .logo{
+        font-size: 20px;
+    }
+
+    .name{
+        background-color: #ca4655;
+        padding: 20px 0px 50px 50px;
+        font-weight: bold;
+        color: white;
+    }
+    
+    .name  h1 {
+        margin: 10px 0px;
+        font-size: 50px;
+    }
+    
+    .name a{
+        text-decoration: none;
+        color: white;
+        font-size: 30px;
+    }
+    .profile{
+        margin: 50px;
+        animation: fade-up 0.5s;
+    }
+    
+    .profile h1{
+        font-size: 40px;
+        color: rgb(63, 63, 63);
+    }
+    
+    .profile p{
+        width: 100%;
+        color: gray;
+        margin-top: 30px;
+        word-spacing: 5px;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+        
+        .skills h1{
+            color: rgb(63, 63, 63);
+        }
+        
+        .list{
+            margin: 0px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .list svg{
+            width: 60px;
+        }
+        
+        .list p{
+            font-size: 16px;
+            padding: 10px;
+            color: gray;
+        
+        }
+
+        .box{
+            margin-top: 30px;
+        }
+
+        .details{
+            margin-left: 0px;
+            margin-top: 0px;
+            width: fit-content;
+            height: 190px;
+            color: gray;
+            animation: appear 5s linear;
+            animation-timeline: view();
+            animation-range: entry 0% cover 40%;
+            box-shadow: 5px 5px 10px 0px gray;
+            padding-top: 20px;
+        }
+        .details h2{
+            color: rgb(63, 63, 63);
+            margin-left: 20px;
+            margin-top: 20px;
+            font-size: 20px;
+        }
+        .details p, h4{
+            margin-left: 20px;
+            margin-top:8px;
+            color: gray;
+            font-size: 15px;
+        }
+        .box{
+            display: block;
+        }
+        .duration{
+            margin-top: 30px;
+            margin-left: 0px;
+            color: #EF233C;
+            font-weight: 700;
+            animation: appear 5s linear;
+            animation-timeline: view();
+            animation-range: entry 0% cover 40%;
+        }
+        .projects{
+            text-align: center;
+            }
+    
+        .project-list{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            }
+    
+        .projects h1{
+            font-size: 40px;
+            color: rgb(63, 63, 63);
+        }
+        #project1{
+            margin-top: 10px;
+        }
+        .wrapper{
+            width: 100%;
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .image{
+            width: 100%;
+            position: relative;
+        }
+    
+        img{
+            width: 350px;
+            height: 300px;
+            display: block;
+            margin: auto;
+        }
+        .content{
+            width: 82%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            position: absolute;
+            background: rgba(0, 0, 0, 0.6);
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            opacity: 0;
+            transition: 0.6s;
+            margin-left: 38px;
+        }
+    
+        .content:hover{
+            opacity: 1;
+        }
+    
+        .content h1{
+            font-size: 20px;
+            color: #ffe100;
+            margin-top: 10px;
+        }
+    
+        .content p{
+            margin-top: 30px;
+            font-size: 19px;
+            color: #fff;
+        }
+        .course-list{
+            justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            margin: 0px;
+        }
+        #courses{
+            width: 300px;
+            height: 200px;
+            transition: 0.2s;
+            box-shadow: 5px 5px 10px 0px gray;
+    
+        }
+        .course-pic h2{
+            color: rgb(100, 100, 100);
+            margin-top: 30px;
+            letter-spacing: 2px;
+        }
+
+        .course-pic p{
+            margin-top: 20px;
+        }
+        
+        .education{
+            margin-bottom: 50px;
+        }
+        .education h1{
+            text-align: center;
+            font-size: 40px;
+            color: rgb(63, 63, 63);
+        }
+        
+    
+        .qual{
+            margin-top: 50px;
+            margin-left: 0px;
+            margin-right: 20px;
+            box-shadow: 5px 5px 10px 0px gray;
+            width: 400px;
+            padding: 20px;
+            animation: appear 5s linear;
+            animation-timeline: view();
+            animation-range: entry 0% cover 40%;
+        }
+        .timeline{
+            margin-top: 90px;
+            margin-left: 20px;
+            color: #EF233C;
+            font-weight: 700;
+            animation: appear 5s linear;
+            animation-timeline: view();
+            animation-range: entry 0% cover 40%;
+        }
+
+        #degree{
+            font-weight: 600;
+        }
+
+        #percentage{
+            font-weight: 800;
+        }
+
+        .footer {
+            text-align: center;
+            padding-bottom: 50px;
+            font-size: 18px;
+        }
+
+        .footer #linkedin, #git{
+            display: inline;
+            margin: 0px;
+        }
+
+        #owner, #mail, #phone{
+            margin-right: 10px;
+            padding-top: 0px;
+        }
+    
+        
+}
